@@ -57,15 +57,15 @@ telethon_version = __telever__
 abuse_m = "Enabled" if str(Config.ABUSE).lower() in enabled_list else "Disabled"
 is_sudo = "True" if gvar_sql.gvarstat("SUDO_USERS") else "False"
 
-my_channel = Config.MY_CHANNEL or "Its_HellBot"
-my_group = Config.MY_GROUP or "HellBot_Chat"
+my_channel = Config.MY_CHANNEL or "friend_circles"
+my_group = Config.MY_GROUP or "friend_circles"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
-chnl_link = "https://t.me/its_hellbot"
-grp_link = "https://t.me/HellBot_Chat"
+chnl_link = "https://t.me/friend_circles"
+grp_link = "https://t.me/friend_circles"
 hell_channel = f"[†hê Hêllẞø†]({chnl_link})"
 hell_grp = f"[Hêllẞø† Group]({grp_link})"
 
