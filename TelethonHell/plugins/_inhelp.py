@@ -93,13 +93,13 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title="𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
         elif event.query.user_id in auth and query == "alive":
             uptime = await get_time((time.time() - StartTime))
-            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>нєℓℓвσт ιѕ σиℓιиє</b> «««"
+            alive_msg = gvarstat("ALIVE_MSG") or "»»» <b>𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 ιѕ σиℓιиє</b> «««"
             alive_name = gvarstat("ALIVE_NAME") or HELL_USER
             he_ll = alive_txt.format(
                 alive_msg, telethon_version, hellbot_version, uptime, abuse_m, is_sudo
@@ -135,7 +135,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     PIC,
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -143,7 +143,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -151,7 +151,7 @@ if Config.BOT_USERNAME and tbot:
 
         elif event.query.user_id in auth and query == "pm_warn":
             CSTM_PMP = gvarstat("CUSTOM_PMPERMIT") or None
-            HELL_FIRST = f"🔥 𝙃𝙚𝙡𝙡𝘽𝙤𝙩 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
+            HELL_FIRST = f"🔥💖 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 𝙋𝙈 𝙎𝙚𝙘𝙪𝙧𝙞𝙩𝙮 💖🔥\n\nHello!! This is an automated message on behalf of {hell_mention}."
             if CSTM_PMP:
                 HELL_FIRST += f"\n\n{CSTM_PMP}"
             a = gvarstat("PMPERMIT_PIC")
@@ -181,7 +181,7 @@ if Config.BOT_USERNAME and tbot:
                 result = builder.document(
                     file=PIC,
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 PM Permit",
                     buttons=[
                         [Button.inline("📝 Request Approval", data="req")],
                         [Button.inline("🚫 Block", data="heheboi")],
@@ -192,7 +192,7 @@ if Config.BOT_USERNAME and tbot:
             else:
                 result = builder.article(
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 PM Permit",
                     buttons=[
                         [Button.inline("📝 Request Approval", data="req")],
                         [Button.inline("🚫 Block", data="heheboi")],
@@ -204,28 +204,28 @@ if Config.BOT_USERNAME and tbot:
         elif event.query.user_id in auth and query == "repo":
             result = builder.article(
                 title="Repository",
-                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
+                text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Network", "https://t.me/hellbot_networks")],
+                    [Button.url("📑⚡ Repo ⚡📑", "https://github.com/The-HellBot/HellBot")],
+                    [Button.url("𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Network", "https://t.me/friend_circles")],
                 ],
             )
 
         else:
             result = builder.article(
-                "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                "@friend_circles",
+                text="""**Hey! This is [𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕](https://t.me/friend_circles) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        Button.url("• Updates •", "https://t.me/Its_HellBot"),
-                        Button.url("• Chat •", "https://t.me/hellbot_chats"),
+                        Button.url("• Updates •", "https://t.me/friend_circles"),
+                        Button.url("• Chat •", "https://t.me/friend_circles"),
                     ],
                     [
                         Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
                         Button.url("• Docs •", "https://hellbot.tech"),
                     ],
                     [
-                        Button.url("◈ HellBot Network ◈", "https://t.me/hellbot_networks"),
+                        Button.url("◈ 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Network ◈", "https://t.me/friend_circles"),
                     ],
                 ],
                 link_preview=False,
@@ -239,7 +239,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             reply_popup = "This is for Other Users..."
         else:
-            reply_popup = "🔰 This is Hêllẞø† PM Security to keep away unwanted retards from spamming PM !!"
+            reply_popup = "🔰 This is 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 PM Security to keep away unwanted retards from spamming PM !!"
         await event.answer(reply_popup, cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"req")))
@@ -249,7 +249,7 @@ if Config.BOT_USERNAME and tbot:
             await event.answer("This is for other users!", cache_time=0, alert=True)
         else:
             await event.edit(
-                "✅ **Request Registered** \n\nMy master will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
+                "✅ **Request Registered** \n\nAll right My master will now decide to look for your request or not.\n😐 Till then wait patiently and don't spam!!"
             )
             target = await event.client(GetFullUserRequest(event.query.user_id))
             first_name = html.escape(target.users[0].first_name)
@@ -266,7 +266,7 @@ if Config.BOT_USERNAME and tbot:
         if event.query.user_id in auth:
             await event.answer("This is for other users!", cache_time=0, alert=True)
         else:
-            await event.edit(f"As you wish. **BLOCKED !!**")
+            await event.edit(f"As you wish. **BLOCKED🚫 !!**")
             if bot:
                 await bot(functions.contacts.BlockRequest(event.query.user_id))
             if H2:
@@ -319,7 +319,7 @@ if Config.BOT_USERNAME and tbot:
                     file=help_pic,
                 )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself a YâdúvåñshiBot and use your bot. Go to @friend_circles for more info.", cache_time=0, alert=True)
 
     @tbot.on(CallbackQuery(data=compile(b"close")))
     async def on_plug_in_callback_query_handler(event):
@@ -330,18 +330,18 @@ if Config.BOT_USERNAME and tbot:
                 f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen"
             )
             await event.edit(
-                f"**🎭 Closed HellBot's help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ Hêllẞø† ™️]({chnl_link})",
+                f"**🎭 Closed 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 help menu**\n\n**Bot Of:**  {hell_mention}\n\n        [©️ 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 ™️]({chnl_link})",
                 buttons=veriler,
                 link_preview=False,
             )
         else:
-            await event.answer("Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.", cache_time=0, alert=True)
+            await event.answer("Hello! This help menu is not for you, you can make yourself a 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 and use your bot. Go to @friend_circles for more info.", cache_time=0, alert=True)
             
     @tbot.on(CallbackQuery(data=compile(b"send\((.+?)\)")))
     async def send(event):
         plugin = event.data_match.group(1).decode("UTF-8")
         _, _, hell_mention = await client_id(event, event.query.user_id)
-        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
+        omk = f"**• Plugin name ≈** `{plugin}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕** ⚡"
         the_plugin_file = "./TelethonHell/plugins/{}.py".format(plugin.lower())
         butt = Button.inline(f"{hell_emoji} Main Menu {hell_emoji}", data="reopen")
         if os.path.exists(the_plugin_file):
@@ -372,7 +372,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 and use your bot. Go to @friend_circles for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -403,7 +403,7 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 and use your bot. Go to @friend_circles for more info.",
                 cache_time=0,
                 alert=True,
             )
@@ -453,10 +453,10 @@ if Config.BOT_USERNAME and tbot:
             )
         else:
             return await event.answer(
-                "Hello! This help menu is not for you, you can make yourself a HellBot and use your bot. Go to @Its_HellBot for more info.",
+                "Hello! This help menu is not for you, you can make yourself a 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 and use your bot. Go to @friend_circles for more info.",
                 cache_time=0,
                 alert=True,
             )
 
 
-# hellbot
+# 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕
