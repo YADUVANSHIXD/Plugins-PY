@@ -165,7 +165,7 @@ if Config.BOT_USERNAME and tbot:
                         pic_list.append(c)
                 PIC = random.choice(pic_list)
             else:
-                PIC = "https://te.legra.ph/file/58df4d86400922aa32acd.jpg"
+                PIC = "https://te.legra.ph/file/645d6a56f8d5aeee7c80c.jpg"
             if PIC and PIC.endswith((".jpg", ".png")):
                 result = builder.photo(
                     file=PIC,
@@ -302,7 +302,7 @@ if Config.BOT_USERNAME and tbot:
             if a:
                 help_pic = a.split(" ")[0]
             else:
-                help_pic = "https://te.legra.ph/file/3a48c5756d2a9763eafaf.jpg"
+                help_pic = "https://te.legra.ph/file/21983e736bf81c0b5bbec.jpg"
 
             if help_pic == "DISABLE":
                 await event.edit(
