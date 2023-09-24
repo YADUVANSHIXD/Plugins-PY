@@ -206,7 +206,7 @@ if Config.BOT_USERNAME and tbot:
                 title="Repository",
                 text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ 𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 ⚡**",
                 buttons=[
-                    [Button.url("📑⚡ Repo ⚡📑", "https://github.com/The-HellBot/HellBot")],
+                    [Button.url("📑⚡ Repo ⚡📑", "https://github.com/pradeepyadav9161/PyHellBot")],
                     [Button.url("𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕 Network", "https://t.me/friend_circles")],
                 ],
             )
@@ -221,7 +221,7 @@ if Config.BOT_USERNAME and tbot:
                         Button.url("• Chat •", "https://t.me/friend_circles"),
                     ],
                     [
-                        Button.url("• Repo •", "https://github.com/The-HellBot/HellBot"),
+                        Button.url("• Repo •", "https://github.com/pradeepyadav9161/PyHellBot"),
                         Button.url("• Docs •", "https://hellbot.tech"),
                     ],
                     [
