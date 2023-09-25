@@ -11,22 +11,22 @@ from TelethonHell.plugins import *
 # -------------------------------------------------------------------------------
 
 ALIVE_TEMP = """
-<b><i>🔥🔥ɦɛʟʟɮօt ɨs օռʟɨռɛ🔥🔥</i></b>
+<b><i>🔥🥀🌹𝒀𝒂𝒅𝒖𝒗𝒂𝒏𝒔𝒉𝒊 𝒃𝒐𝒕🥀 ɨs օռʟɨռɛ🌹🔥</i></b>
 <b><i>↼ Øwñêr ⇀</i></b> : 『 {hell_mention} 』
 ╭──────────────
-┣─ <b>» Telethon:</b> <i>{telethon_version}</i>
-┣─ <b>» Hêllẞø†:</b> <i>{hellbot_version}</i>
-┣─ <b>» Sudo:</b> <i>{is_sudo}</i>
-┣─ <b>» Uptime:</b> <i>{uptime}</i>
-┣─ <b>» Ping:</b> <i>{ping}</i>
+┣─ <b>» 🌹Telethon:</b> <i>{telethon_version}</i>
+┣─ <b>» 🌹Yâdüvãñshi bot:</b> <i>{hellbot_version}</i>
+┣─ <b>» 🌹Sudo:</b> <i>{is_sudo}</i>
+┣─ <b>» 🌹Uptime:</b> <i>{uptime}</i>
+┣─ <b>» 🌹Ping:</b> <i>{ping}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[†hê Hêllẞø†]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/friend_circles'>[Yãduvàñshi World]</a> «««</i></b>
 """
 
 msg = """{}\n
 <b><i>🏅 𝙱𝚘𝚝 𝚂𝚝𝚊𝚝𝚞𝚜 🏅</b></i>
 <b>Telethon ≈</b>  <i>{}</i>
-<b>Hêllẞø† ≈</b>  <i>{}</i>
+<b>Yâdüvãñshi bot ≈</b>  <i>{}</i>
 <b>Uptime ≈</b>  <i>{}</i>
 <b>Abuse ≈</b>  <i>{}</i>
 <b>Sudo ≈</b>  <i>{}</i>
