@@ -73,7 +73,7 @@ async def start_hellbot():
         await plug_load("TelethonHell/plugins/*.py")
         await plug_channel(Hell, Config.PLUGIN_CHANNEL)
         LOGS.info("⚡ Your HellBot Is Now Working ⚡")
-        LOGS.info("Head to @Its_HellBot for Updates. Also join chat group to get help regarding HellBot.")
+        LOGS.info("Head to @friend_circles for Updates. Also join chat group to get help regarding HellBot.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await hell_is_on(total)
     except Exception as e:
